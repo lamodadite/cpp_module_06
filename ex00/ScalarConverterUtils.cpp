@@ -113,7 +113,7 @@ bool	ScalarConverterUtils::isFloat(std::string input)
 	std::istringstream	iss(input);
 	float				floatValue;
 
-	std::cout << floatValue << std::endl;
+	iss >> floatValue;
 	if (iss.fail() || !iss.eof())
 		return (false);
 	return (true);
